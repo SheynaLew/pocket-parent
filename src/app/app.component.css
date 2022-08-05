@@ -11,10 +11,18 @@ main{
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 70%;
     width: 70%;
+    margin: auto;
     padding: 1.5rem 1rem;
     background-color: rgb(197, 197, 250);
+}
+
+list-card {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
 }

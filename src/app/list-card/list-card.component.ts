@@ -8,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class ListCardComponent implements OnInit {
 
   constructor() { }
+  listCardTitles = ["Today", "Tomorrow", "Later"];
 
   ngOnInit(): void {
   }
+
 
 }
