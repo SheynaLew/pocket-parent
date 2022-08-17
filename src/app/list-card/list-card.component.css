@@ -32,4 +32,9 @@ padding: 0.2rem 0 0 0.5rem;
 
 .list-item {
     list-style-type: none;
+    cursor: pointer;
+}
+
+.list-item:hover {
+    font-size: 1.1rem;
 }

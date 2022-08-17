@@ -49,6 +49,10 @@ sortListItems() {
     this.laterListUpdated = laterList
 }
 
+deleteItemFromTodaysList(i: number) {
+this.todaysListUpdated.splice(i, 1);
+}
+
 constructor() { }
     }
 

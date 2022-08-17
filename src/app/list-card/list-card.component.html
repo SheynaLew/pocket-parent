@@ -1,8 +1,8 @@
 <div class="container">
     <div class="list-card-container">
         <h2 class="list-card-title h2">Today</h2>
-        <ul class="list" *ngFor="let todaysListItem of todaysList">
-            <li class="list-item">{{ todaysListItem.item }}</li>
+        <ul class="list" *ngFor="let todaysListItem of todaysList; let i = index" >
+            <li class="list-item" (click)="onDoneTodaysTask(i)">{{ todaysListItem.item }}</li>
         </ul>
     </div>
     <div class="list-card-container">
