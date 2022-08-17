@@ -1,3 +1,5 @@
-<div class="list-card-container">
-    <h2 class="list-card-title h2">Today</h2>
+<div class="container">
+    <div class="list-card-container" *ngFor="let listCardTitle of listCardTitles">
+        <h2 class="list-card-title h2">{{ listCardTitle.title }}</h2>
+    </div>
 </div>

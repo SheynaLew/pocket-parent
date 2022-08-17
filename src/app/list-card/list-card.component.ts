@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ListCardService } from '../services/list-card.service';
+
 
 @Component({
   selector: 'list-card',
@@ -7,11 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListCardComponent implements OnInit {
 
-  constructor() { }
-  listCardTitles = ["Today", "Tomorrow", "Later"];
+  constructor(
+    private listCardService: ListCardService
+  ) { }
+
 
   ngOnInit(): void {
   }
 
+  get listCardTitles() {
+    return this.listCardService.listCardTitles;
+   }
 
 }
