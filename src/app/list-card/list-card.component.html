@@ -1,12 +1,12 @@
 <div class="container">
     <div class="list-card-container" *ngFor="let listCardTitle of listCardTitles">
         <h2 class="list-card-title h2">{{ listCardTitle.title }}</h2>
-        <ul class="list">
+        <ul class="list" *ngFor="let todaysListItem of todaysList">
             <!-- need an if
                 if the title is today, display each item in todays list
                 if the title is tomorrow, display each title in tomrrows list
                 if the title is later, display each title in later list -->
-            <li class="list-item"></li>
+            <li class="list-item">{{ todaysListItem.item }}</li>
         </ul>
     </div>
 </div>
