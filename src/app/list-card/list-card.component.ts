@@ -25,4 +25,16 @@ export class ListCardComponent implements OnInit {
     return this.listCardService.listCardTitles;
    }
 
+  get todaysList() {
+    return this.listCardService.todaysListUpdated;
+  } 
+
+  get tomorrowsList() {
+    return this.listCardService.tomorrowsListUpdated;
+  }
+
+  get laterList() {
+    return this.listCardService.laterListUpdated;
+  }
+
 }
