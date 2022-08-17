@@ -16,6 +16,9 @@ export class ListCardComponent implements OnInit {
 
   ngOnInit(): void {
     this.listCardService.sortListItems();
+    console.log("today", this.listCardService.todaysListUpdated)
+    console.log("tomorrow", this.listCardService.tomorrowsListUpdated)
+    console.log("later", this.listCardService.laterListUpdated)
   }
 
   get listCardTitles() {

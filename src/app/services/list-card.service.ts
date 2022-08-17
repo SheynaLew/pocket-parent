@@ -6,7 +6,9 @@ import { Injectable } from "@angular/core";
 
 export class ListCardService {
 
-todaysListUpdated = [];    
+todaysListUpdated = [];   
+tomorrowsListUpdated = [];  
+laterListUpdated = [];
         
 listCardTitles = [
     {title: "Today"}, 
@@ -36,7 +38,15 @@ sortListItems() {
     let todaysList = this.listItems.filter(function (listItem)
         {return listItem.list === "Today"
         })
+    let tomorrowsList = this.listItems.filter(function (listItem)
+        {return listItem.list === "Tomorrow"
+        })
+    let laterList = this.listItems.filter(function (listItem)
+        {return listItem.list === "Later"
+        })
     this.todaysListUpdated = todaysList;
+    this.tomorrowsListUpdated = tomorrowsList;
+    this.laterListUpdated = laterList
 }
 
 constructor() { }
