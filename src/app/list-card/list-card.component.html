@@ -8,13 +8,13 @@
     <div class="list-card-container">
         <h2 class="list-card-title h2">Tomorrow</h2>
         <ul class="list" *ngFor="let tomorrowsListItem of tomorrowsList">
-            <li class="list-item">{{ tomorrowsListItem.item }}</li>
+            <li class="list-item" (click)="onDoneTomorrowsTask(i)">{{ tomorrowsListItem.item }}</li>
         </ul>
     </div>
     <div class="list-card-container">
         <h2 class="list-card-title h2">Later</h2>
         <ul class="list" *ngFor="let laterListItem of laterList">
-            <li class="list-item">{{ laterListItem.item }}</li>
+            <li class="list-item" (click)="onDoneLatersTask(i)">{{ laterListItem.item }}</li>
         </ul>
     </div>
 </div>

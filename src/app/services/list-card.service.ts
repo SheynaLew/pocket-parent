@@ -53,6 +53,14 @@ deleteItemFromTodaysList(i: number) {
 this.todaysListUpdated.splice(i, 1);
 }
 
+deleteItemFromTomorrowsList(i: number) {
+    this.tomorrowsListUpdated.splice(i, 1);
+    }
+
+deleteItemFromLatersList(i: number) {
+    this.laterListUpdated.splice(i, 1);
+    }
+
 constructor() { }
     }
 
