@@ -9,6 +9,7 @@ import { ListCardService } from '../services/list-card.service';
 })
 export class ListCardComponent implements OnInit {
 
+
   constructor(
     private listCardService: ListCardService
   ) { }
