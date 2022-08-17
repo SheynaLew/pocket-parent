@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnChanges, OnInit } from '@angular/core';
 import { ListCardService } from '../services/list-card.service';
 
 
@@ -15,6 +15,7 @@ export class ListCardComponent implements OnInit {
 
 
   ngOnInit(): void {
+    this.listCardService.sortListItems();
   }
 
   get listCardTitles() {
